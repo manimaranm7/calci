@@ -28,9 +28,9 @@ namespace Peakbyte.API.Controllers
         // POST /api/Calculation
         [ActionName("calculate")]
         [HttpPost]
-        public HttpResponseMessage Calculate(int operand1, int operand2, int operationType)
+        public HttpResponseMessage Calculate(ComputeUnit computeUnit)
         {
-            ComputeUnit computeUnit = new ComputeUnit(operand1, operand2, (OPERATION_TYPE)operationType);            
+            //ComputeUnit computeUnit = new ComputeUnit(operand1, operand2, (OPERATION_TYPE)operationType);            
             Calculation result = Computation.Compute(computeUnit);
 
             Uow.Calculation.Add(result);

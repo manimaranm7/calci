@@ -32,5 +32,5 @@
 
         </div>
     </div>
-
+    <%: Scripts.Render("~/scripts/app/app.js") %>
 </asp:Content>

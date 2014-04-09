@@ -34,6 +34,9 @@ namespace Peakbyte.UI.Web
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/appJs").Include(
+                "~/Scripts/app/app.js"
+                ));
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = true;
